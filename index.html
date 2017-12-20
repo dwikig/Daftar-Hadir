@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <!-- tambahan style dan script -->
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/index.js"></script>
+        <title>FHadir</title>
+    </head>
+    <body>
+        <div data-role="page" id="main"><!-- main page -->
+            <div data-theme="c" data-role="header">
+                <h3>
+                    Daftar Hadir
+                </h3>
+            </div>
+            <div data-role="content">
+                <div class="example-wrapper" data-iscroll>
+                    <ul data-role="listview" data-filter="true" data-filter-placeholder="Cari Dosen. . ." data-inset="true"  id="staff-list" data-theme="c"><!-- staff list -->
+                    </ul>
+                </div>
+            </div>
+            <div data-theme="c" data-role="footer">
+                <h1>PPK Team</h1>
+            </div>
+        </div>
+        <div data-role="page" id="personal"><!-- personal page -->
+            <div data-theme="c" data-role="header">
+                <a href="#main" class="ui-btn-left" data-transition="slide" data-direction="reverse">Back</a>
+                <h3>
+                    Kehadiran dan Personal
+                </h3>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview"  id="staff-data" data-theme="c"><!-- staff data -->
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
